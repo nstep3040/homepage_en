@@ -1,0 +1,38 @@
+.lnb {
+  position: absolute;
+  left: 0;
+}
+.lnb > h2 {
+  margin-bottom: 20px;
+}
+.lnb > ul > li {
+  display: block;
+  width: 220px;
+  height: 50px;
+  text-align: center;
+  border: 2px solid #3d6aff;
+}
+.lnb > ul > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.lnb > ul > li > input {
+  display: none;
+}
+.lnb > ul > li > input:checked + label {
+  font-weight: 700;
+  background-color: rgba(47, 130, 255, 0.3);
+}
+.lnb > ul > li > label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+}
+.lnb > ul > li > label > a {
+  display: block;
+}
+.lnb > ul > li > label > a:active {
+  color: #00f;
+}
+
+/*# sourceMappingURL=lnb.css.map */

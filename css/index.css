@@ -1,0 +1,38 @@
+.company {
+  width: 80%;
+  margin: 0 auto;
+}
+.company .companyInfo {
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.company .companyInfo > p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  word-break: keep-all;
+}
+.company .companyImg > img {
+  width: 100%;
+}
+
+.noticePreview {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.noticePreview .noticePost {
+  width: 65%;
+  height: 100%;
+  border: 1px solid #000;
+}
+.noticePreview .noticeImg {
+  width: 30%;
+  height: 100%;
+  border: 1px solid #000;
+}
+
+/*# sourceMappingURL=index.css.map */

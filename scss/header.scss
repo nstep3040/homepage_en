@@ -1,0 +1,48 @@
+$headerHeight: 60;
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  height: $headerHeight + px;
+  margin-bottom: 50px;
+
+  .logo {
+    a {
+      display: inline-block;
+      width: 250px;
+      height: $headerHeight + px;
+      margin-right: 200px;
+      background: url("../img/logo_01.svg") no-repeat;
+      background-position: center;
+      background-size: 80%;
+    }
+  }
+
+  .topMenu {
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+
+    & > li {
+      display: block;
+      height: 100%;
+      text-align: center;
+      font-weight: 600;
+
+      & > a {
+        display: block;
+        height: 100%;
+        line-height: 60px;
+        color: #000;
+
+        &:hover {
+          color: #f00;
+        }
+      }
+    }
+  }
+}

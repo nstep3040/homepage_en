@@ -1,0 +1,54 @@
+.sonar .sonarInfo {
+  margin-bottom: 50px;
+}
+.sonar .sonarPoint {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.sonar .sonarPoint .sonarApp,
+.sonar .sonarPoint .sonarKey {
+  flex: 0.4;
+}
+.sonar .sonarPoint h3 {
+  margin-bottom: 10px;
+}
+.sonar .sonarPoint ul {
+  padding-left: 20px;
+}
+.sonar .sonarPoint ul li {
+  list-style-type: disc;
+}
+.sonar .sonarPoint ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.sonar .sonarPoint .sonarTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+.sonar .sonarPoint .sonarTable th,
+.sonar .sonarPoint .sonarTable td {
+  padding: 0 20px;
+  text-align: center;
+}
+.sonar .sonarPoint .sonarTable thead {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+.sonar .sonarPoint .sonarTable tbody tr:nth-child(2n-1) {
+  background-color: #ddd;
+}
+.sonar .sonarPoint .sonarTable tbody tr:last-child {
+  border-bottom: 2px solid #000;
+}
+.sonar .sonarImg {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sonar .sonarImg > img {
+  width: 95%;
+  height: 300px;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=sonar.css.map */

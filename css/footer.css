@@ -1,0 +1,27 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-top: 50px;
+  background-color: #ddd;
+}
+footer .footerInfo {
+  display: flex;
+  width: 650px;
+  justify-content: space-between;
+}
+footer .footerInfo .footerLogo {
+  display: inline-block;
+  width: 200px;
+  background: url(../img/logo_02.svg) no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+footer .footerInfo .footerText {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/*# sourceMappingURL=footer.css.map */

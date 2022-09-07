@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.company {
+  width: 80%;
+  margin: 0 auto;
+}
+.company .companyInfo {
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.company .companyInfo > p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  word-break: keep-all;
+}
+.company .companyImg > img {
+  width: 100%;
+}
+
+.noticePreview {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.noticePreview .noticePost {
+  width: 65%;
+  height: 100%;
+  border: 1px solid #000;
+}
+.noticePreview .noticeImg {
+  width: 30%;
+  height: 100%;
+  border: 1px solid #000;
+}
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 50px;
+}
+header .logo a {
+  display: inline-block;
+  width: 250px;
+  height: 60px;
+  margin-right: 200px;
+  background: url("../img/logo_01.svg") no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+header .topMenu {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+}
+header .topMenu > li {
+  display: block;
+  height: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+header .topMenu > li > a {
+  display: block;
+  height: 100%;
+  line-height: 60px;
+  color: #000;
+}
+header .topMenu > li > a:hover {
+  color: #f00;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-top: 50px;
+  background-color: #ddd;
+}
+footer .footerInfo {
+  display: flex;
+  width: 650px;
+  justify-content: space-between;
+}
+footer .footerInfo .footerLogo {
+  display: inline-block;
+  width: 200px;
+  background: url(../img/logo_02.svg) no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+footer .footerInfo .footerText {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.lnb {
+  position: absolute;
+  left: 0;
+}
+.lnb > h2 {
+  margin-bottom: 20px;
+}
+.lnb > ul > li {
+  display: block;
+  width: 220px;
+  height: 50px;
+  text-align: center;
+  border: 2px solid #3d6aff;
+}
+.lnb > ul > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.lnb > ul > li > input {
+  display: none;
+}
+.lnb > ul > li > input:checked + label {
+  font-weight: 700;
+  background-color: rgba(47, 130, 255, 0.3);
+}
+.lnb > ul > li > label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+}
+.lnb > ul > li > label > a {
+  display: block;
+}
+.lnb > ul > li > label > a:active {
+  color: #00f;
+}
+
+.sonar .sonarInfo {
+  margin-bottom: 50px;
+}
+.sonar .sonarPoint {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.sonar .sonarPoint .sonarApp,
+.sonar .sonarPoint .sonarKey {
+  flex: 0.4;
+}
+.sonar .sonarPoint h3 {
+  margin-bottom: 10px;
+}
+.sonar .sonarPoint ul {
+  padding-left: 20px;
+}
+.sonar .sonarPoint ul li {
+  list-style-type: disc;
+}
+.sonar .sonarPoint ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.sonar .sonarPoint .sonarTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+.sonar .sonarPoint .sonarTable th,
+.sonar .sonarPoint .sonarTable td {
+  padding: 0 20px;
+  text-align: center;
+}
+.sonar .sonarPoint .sonarTable thead {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+.sonar .sonarPoint .sonarTable tbody tr:nth-child(2n-1) {
+  background-color: #ddd;
+}
+.sonar .sonarPoint .sonarTable tbody tr:last-child {
+  border-bottom: 2px solid #000;
+}
+.sonar .sonarImg {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sonar .sonarImg > img {
+  width: 95%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  min-height: 100%;
+}
+.wrap .main {
+  position: relative;
+  flex: 1;
+  width: 70%;
+  margin: 0 auto;
+}
+.wrap .sub {
+  padding-left: 260px;
+}
+
+/*# sourceMappingURL=common.css.map */
