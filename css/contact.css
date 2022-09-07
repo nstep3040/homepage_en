@@ -1,0 +1,31 @@
+.contact {
+  width: 80%;
+  margin: 0 auto;
+}
+.contact h1 {
+  margin-bottom: 10px;
+}
+.contact .googleMap {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+}
+.contact .aboutUs {
+  width: 100%;
+  border-collapse: collapse;
+}
+.contact .aboutUs tr {
+  height: 50px;
+}
+.contact .aboutUs tr:first-child {
+  border-bottom: 2px solid #ccc;
+}
+.contact .aboutUs td:nth-child(1) {
+  width: 200px;
+}
+.contact .aboutUs td span {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,38 @@
+.contact {
+  width: 80%;
+  margin: 0 auto;
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  .googleMap {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+  }
+
+  .aboutUs {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+      height: 50px;
+
+      &:first-child {
+        border-bottom: 2px solid #ccc;
+      }
+    }
+
+    td {
+      &:nth-child(1) {
+        width: 200px;
+      }
+
+      span {
+        font-weight: 700;
+        margin-right: 10px;
+      }
+    }
+  }
+}
