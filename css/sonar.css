@@ -28,7 +28,7 @@
 }
 .sonar .sonarPoint .sonarTable th,
 .sonar .sonarPoint .sonarTable td {
-  padding: 0 20px;
+  padding: 2.5px 10px;
   text-align: center;
 }
 .sonar .sonarPoint .sonarTable thead {

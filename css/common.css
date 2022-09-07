@@ -187,7 +187,7 @@ footer .footerInfo .footerText {
 }
 .sonar .sonarPoint .sonarTable th,
 .sonar .sonarPoint .sonarTable td {
-  padding: 0 20px;
+  padding: 2.5px 10px;
   text-align: center;
 }
 .sonar .sonarPoint .sonarTable thead {
@@ -230,7 +230,7 @@ footer .footerInfo .footerText {
   height: 50px;
 }
 .contact .aboutUs tr:first-child {
-  border-bottom: 2px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .contact .aboutUs td:nth-child(1) {
   width: 200px;
