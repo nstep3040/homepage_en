@@ -21,7 +21,7 @@ document.write(`
                 <li><a href="">Unmanned System</a></li>
                 <li><a href="">Tectical/Security</a></li>
                 <li><a href="">Notice</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="./sub_contact.html">Contact</a></li>
             </ul>
         </header>
 `);
