@@ -46,9 +46,12 @@
   justify-content: space-evenly;
 }
 .sonar .sonarImg > img {
-  width: 95%;
+  width: 80%;
   height: 300px;
   object-fit: contain;
+}
+.sonar .sonarImg.imgSmaller > img {
+  height: 220px;
 }
 
 /*# sourceMappingURL=sonar.css.map */

@@ -99,25 +99,21 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80px;
+  height: 70px;
   margin-top: 50px;
   background-color: #ddd;
 }
 footer .footerInfo {
   display: flex;
-  width: 650px;
-  justify-content: space-between;
-}
-footer .footerInfo .footerLogo {
-  display: inline-block;
-  width: 200px;
-  background: url(../img/logo_02.svg) no-repeat;
-  background-size: 80%;
-  background-position: center;
-}
-footer .footerInfo .footerText {
+  width: 550px;
+  height: 30px;
+  justify-content: space-evenly;
+  text-align: center;
   font-size: 0.8rem;
   color: #666;
+}
+footer .footerInfo > h2, footer .footerInfo > p {
+  line-height: 30px;
 }
 
 .lnb {
@@ -155,6 +151,197 @@ footer .footerInfo .footerText {
 }
 .lnb > ul > li > label > a:active {
   color: #00f;
+}
+
+.tectical ul {
+  padding-left: 20px;
+}
+.tectical ul li {
+  list-style-type: disc;
+}
+.tectical ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.tectical .tecticalInfo {
+  margin-bottom: 50px;
+}
+.tectical .tecticalPoint {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.tectical .tecticalPoint .tecticalApp,
+.tectical .tecticalPoint .tecticalKey {
+  flex: 0.4;
+}
+.tectical .tecticalPoint h3 {
+  margin-bottom: 10px;
+}
+.tectical .tecticalPoint .tecticalTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tectical .tecticalPoint .tecticalTable th,
+.tectical .tecticalPoint .tecticalTable td {
+  padding: 2.5px 10px;
+  text-align: center;
+}
+.tectical .tecticalPoint .tecticalTable thead {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+.tectical .tecticalPoint .tecticalTable tbody tr:nth-child(2n-1) {
+  background-color: #ddd;
+}
+.tectical .tecticalPoint .tecticalTable tbody tr:last-child {
+  border-bottom: 2px solid #000;
+}
+.tectical .tecticalImg {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tectical .tecticalImg > img {
+  width: 95%;
+  height: 300px;
+  object-fit: contain;
+}
+.tectical .tecticalImg.imgSmaller > img {
+  height: 220px;
+}
+.tectical .mcm > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 0;
+}
+.tectical .mcm > ul > li {
+  width: 45%;
+}
+.tectical .mcm > ul > li > p {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.tectical .mcm > ul > li > img {
+  object-fit: contain;
+  height: 200px;
+}
+.tectical .digital {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 40px;
+}
+.tectical .digital > p,
+.tectical .digital .tecticalPoint {
+  width: 55%;
+}
+.tectical .digital img {
+  object-fit: contain;
+  width: 40%;
+  vertical-align: middle;
+}
+.tectical .digital .tecticalPoint {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+}
+.tectical.emp .empImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 70px;
+}
+.tectical.emp .empImg > span {
+  width: 40%;
+}
+.tectical.emp .empImg > span > h4 {
+  height: 35px;
+  line-height: 30px;
+  text-align: center;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+}
+.tectical.emp .empImg > span > img {
+  width: 90%;
+  object-fit: contain;
+  margin: 0 5%;
+}
+.tectical .gnss > p {
+  margin-bottom: 30px;
+}
+.tectical .gnss > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 220px;
+  margin-bottom: 60px;
+}
+.tectical .gnss > div > figure > img {
+  height: 100%;
+  object-fit: contain;
+}
+.tectical .gnss > div > figure > figcaption {
+  text-align: center;
+  font-weight: 700;
+}
+.tectical .gnssTable {
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+}
+.tectical .gnssTable > figure {
+  width: 25%;
+  height: auto;
+}
+.tectical .gnssTable > figure > figcaption {
+  text-align: center;
+  font-weight: 700;
+}
+.tectical .gnssTable > figure > img {
+  width: 100%;
+  object-fit: contain;
+}
+.tectical .gnssTable > table {
+  border-collapse: collapse;
+}
+.tectical .gnssTable > table tr:first-child {
+  border-top: 2px solid #000;
+}
+.tectical .gnssTable > table tr:last-child {
+  border-bottom: 2px solid #000;
+}
+.tectical .gnssTable > table th,
+.tectical .gnssTable > table td {
+  padding: 5px 10px;
+  text-align: start;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.tectical .gnssTable > table th {
+  background-color: #ccc;
+}
+.tectical .drone {
+  display: flex;
+  gap: 0 30px;
+}
+.tectical .drone > .tecticalPoint {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  margin-bottom: 0;
+}
+.tectical .drone > .tecticalPoint > .tecticalApp > ul {
+  padding: 10px 30px;
+  background-color: #eee;
+  border-radius: 10px;
+}
+.tectical .drone > img {
+  width: 40%;
+  object-fit: contain;
+}
+.tectical .drone ~ .tecticalImg {
+  margin: 0 auto;
 }
 
 .sonar .sonarInfo {
@@ -205,9 +392,12 @@ footer .footerInfo .footerText {
   justify-content: space-evenly;
 }
 .sonar .sonarImg > img {
-  width: 95%;
+  width: 80%;
   height: 300px;
   object-fit: contain;
+}
+.sonar .sonarImg.imgSmaller > img {
+  height: 220px;
 }
 
 .contact {

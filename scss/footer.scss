@@ -1,4 +1,4 @@
-$footerHeight: 80;
+$footerHeight: 70;
 
 footer {
   display: flex;
@@ -11,20 +11,16 @@ footer {
 
   .footerInfo {
     display: flex;
-    width: 650px;
-    justify-content: space-between;
+    width: 550px;
+    height: 30px;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
 
-    .footerLogo {
-      display: inline-block;
-      width: 200px;
-      background: url(../img/logo_02.svg) no-repeat;
-      background-size: 80%;
-      background-position: center;
-    }
-
-    .footerText {
-      font-size: 0.8rem;
-      color: #666;
+    & > h2,
+    & > p {
+      line-height: 30px;
     }
   }
 }

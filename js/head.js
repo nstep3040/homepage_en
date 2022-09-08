@@ -17,9 +17,9 @@ document.write(`
                 <a href="./index.html"></a>
             </div>
             <ul class="topMenu">
+                <li><a href="">Tectical/Security</a></li>
                 <li><a href="./html/sub_sonar_01.html">Sonar System</a></li>
                 <li><a href="">Unmanned System</a></li>
-                <li><a href="">Tectical/Security</a></li>
                 <li><a href="">Notice</a></li>
                 <li><a href="./html/sub_contact.html">Contact</a></li>
             </ul>

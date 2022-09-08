@@ -60,9 +60,14 @@
     display: flex;
     justify-content: space-evenly;
     & > img {
-      width: 95%;
+      width: 80%;
       height: 300px;
       object-fit: contain;
+    }
+    &.imgSmaller {
+      & > img {
+        height: 220px;
+      }
     }
   }
 }
