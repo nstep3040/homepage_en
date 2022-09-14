@@ -344,6 +344,73 @@ footer .footerInfo > h2, footer .footerInfo > p {
   margin: 0 auto;
 }
 
+.vip > p {
+  margin-bottom: 30px;
+}
+.vip > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 220px;
+  margin-bottom: 60px;
+}
+.vip > div > figure > img {
+  height: 100%;
+  object-fit: contain;
+}
+.vip > div > figure > figcaption {
+  text-align: center;
+  font-weight: 700;
+}
+
+.vipTable {
+  display: flex;
+  justify-content: space-between;
+}
+.vipTable > table {
+  flex: 1.1;
+  border-collapse: collapse;
+}
+.vipTable > table th,
+.vipTable > table td {
+  padding: 5px 10px;
+  text-align: start;
+  border: 1px solid #000;
+}
+.vipTable > table th {
+  background-color: #ccc;
+}
+.vipTable .vipImg {
+  flex: 0.9;
+}
+.vipTable .vipImg > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.rcied {
+  display: flex;
+  gap: 0 30px;
+}
+.rcied > .tecticalPoint {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px 0;
+  margin-bottom: 0;
+}
+.rcied > .tecticalPoint > .tecticalApp > ul {
+  padding: 10px 30px;
+  margin-bottom: 30px;
+}
+.rcied > .tecticalPoint > .tecticalApp > img {
+  width: 100%;
+}
+.rcied > img {
+  width: 35%;
+  object-fit: contain;
+}
+
 .sonar .sonarInfo {
   margin-bottom: 50px;
 }
