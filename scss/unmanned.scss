@@ -1,0 +1,156 @@
+.unmanned {
+  ul {
+    padding-left: 20px;
+
+    li {
+      list-style-type: disc;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .unmannedPoint,
+  .unmannedPoint2 {
+    display: flex;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+
+      li {
+        list-style-type: disc;
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .unmannedImg {
+    display: flex;
+
+    & > img {
+      object-fit: contain;
+    }
+  }
+
+  // multi ------------------------------------------------------------------------------------------
+  .multi {
+    & > ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px 0;
+
+      & > li {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0 30px;
+        width: 100%;
+        background-color: #eee;
+
+        & > p {
+          margin: auto 0;
+        }
+
+        & > img {
+          object-fit: contain;
+          width: 250px;
+        }
+      }
+    }
+  }
+
+  // auv --------------------------------------------------------------------------------------
+  .auv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+
+    .unmannedPoint {
+      justify-content: space-between;
+      margin: 40px 0;
+
+      & > .unmannedImg {
+        width: 45%;
+
+        & > img {
+          width: 100%;
+        }
+      }
+
+      & > .unmannedKey {
+        width: 50%;
+      }
+    }
+
+    .unmannedPoint2 {
+      flex-wrap: nowrap;
+      gap: 0 100px;
+      margin-top: 20px;
+
+      & > .unmannedImg {
+        justify-content: space-evenly;
+        width: 40%;
+
+        & > img {
+          height: 80%;
+        }
+      }
+
+      & > .unmannedKey {
+        width: 60%;
+      }
+    }
+  }
+
+  // rov --------------------------------------------------------------------------------------
+  .rov {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+
+    .unmannedPoint {
+      justify-content: space-between;
+      margin: 40px 0;
+
+      & > .unmannedImg {
+        justify-content: space-evenly;
+        width: 30%;
+
+        & > img {
+          width: 80%;
+        }
+      }
+
+      & > .unmannedKey {
+        width: 70%;
+      }
+    }
+
+    .unmannedPoint2 {
+      flex-wrap: nowrap;
+      gap: 10px 0;
+      margin-top: 20px;
+      margin-bottom: 40px;
+
+      & > .unmannedImg {
+        justify-content: space-evenly;
+        width: 30%;
+
+        & > img {
+          width: 80%;
+        }
+      }
+
+      & > .unmannedKey {
+        width: 70%;
+      }
+    }
+  }
+}

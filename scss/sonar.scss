@@ -6,12 +6,6 @@
   .sonarPoint {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 50px;
-
-    .sonarApp,
-    .sonarKey {
-      flex: 0.4;
-    }
 
     h3 {
       margin-bottom: 10px;
@@ -58,15 +52,153 @@
 
   .sonarImg {
     display: flex;
-    justify-content: space-evenly;
+
     & > img {
-      width: 80%;
-      height: 300px;
       object-fit: contain;
+      height: 100%;
     }
-    &.imgSmaller {
+  }
+
+  // MB side scan sonar --------------------------------------------------------------------------------------
+  .mb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 0;
+
+    .sonarPoint {
+      gap: 0 100px;
+    }
+
+    .sonarImg {
+      justify-content: space-evenly;
+      width: 100%;
+
       & > img {
-        height: 220px;
+        height: 100%;
+      }
+    }
+  }
+
+  // SB side scan sonar --------------------------------------------------------------------------------------
+  .sb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 0;
+
+    .sonarPoint {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 50px 0;
+      width: 40%;
+    }
+
+    .sonarImg {
+      justify-content: space-evenly;
+      width: 60%;
+
+      & > img {
+        height: 80%;
+      }
+    }
+  }
+
+  // bathy --------------------------------------------------------------------------------------
+  .bathy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 0;
+
+    .sonarPoint {
+      gap: 0 100px;
+    }
+
+    & > .sonarImg {
+      justify-content: center;
+      width: 100%;
+
+      & > img {
+        height: 80%;
+      }
+    }
+  }
+
+  // naval --------------------------------------------------------------------------------------
+  .naval {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 0;
+
+    .sonarPoint {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 50px 0;
+      width: 60%;
+
+      & > .sonarImg {
+        & > img {
+          width: 80%;
+        }
+      }
+    }
+
+    & > .sonarImg {
+      justify-content: space-evenly;
+      width: 40%;
+
+      & > img {
+        height: 80%;
+      }
+    }
+  }
+
+  // urn --------------------------------------------------------------------------------------
+  .urn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 0;
+
+    .sonarPoint {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 50px 0;
+      width: 65%;
+    }
+
+    .sonarImg {
+      justify-content: space-evenly;
+      width: 35%;
+
+      & > img {
+        width: 70%;
+      }
+    }
+  }
+
+  // sonar testing---------------------------------------------------------------------------------
+  .s_test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 0;
+
+    .sonarPoint {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 50px 0;
+      width: 50%;
+    }
+
+    .sonarImg {
+      justify-content: space-evenly;
+      width: 50%;
+
+      & > img {
+        height: 60%;
       }
     }
   }

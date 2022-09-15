@@ -123,7 +123,7 @@
   margin-bottom: 60px;
 }
 .tectical .gnss > div > figure > img {
-  height: 100%;
+  width: 95%;
   object-fit: contain;
 }
 .tectical .gnss > div > figure > figcaption {
@@ -241,12 +241,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 10px 0;
+  gap: 20px 0;
   margin-bottom: 0;
 }
 .rcied > .tecticalPoint > .tecticalApp > ul {
   padding: 10px 30px;
-  margin-bottom: 30px;
 }
 .rcied > .tecticalPoint > .tecticalApp > img {
   width: 100%;

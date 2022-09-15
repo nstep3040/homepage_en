@@ -10,14 +10,14 @@ footer {
 footer .footerInfo {
   display: flex;
   width: 550px;
-  height: 30px;
+  height: 20px;
   justify-content: space-evenly;
   text-align: center;
   font-size: 0.8rem;
   color: #666;
 }
 footer .footerInfo > h2, footer .footerInfo > p {
-  line-height: 30px;
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=footer.css.map */

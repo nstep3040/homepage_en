@@ -4,11 +4,6 @@
 .sonar .sonarPoint {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 50px;
-}
-.sonar .sonarPoint .sonarApp,
-.sonar .sonarPoint .sonarKey {
-  flex: 0.4;
 }
 .sonar .sonarPoint h3 {
   margin-bottom: 10px;
@@ -43,15 +38,121 @@
 }
 .sonar .sonarImg {
   display: flex;
-  justify-content: space-evenly;
 }
 .sonar .sonarImg > img {
-  width: 80%;
-  height: 300px;
   object-fit: contain;
+  height: 100%;
 }
-.sonar .sonarImg.imgSmaller > img {
-  height: 220px;
+.sonar .mb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 0;
+}
+.sonar .mb .sonarPoint {
+  gap: 0 100px;
+}
+.sonar .mb .sonarImg {
+  justify-content: space-evenly;
+  width: 100%;
+}
+.sonar .mb .sonarImg > img {
+  height: 100%;
+}
+.sonar .sb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 0;
+}
+.sonar .sb .sonarPoint {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px 0;
+  width: 40%;
+}
+.sonar .sb .sonarImg {
+  justify-content: space-evenly;
+  width: 60%;
+}
+.sonar .sb .sonarImg > img {
+  height: 80%;
+}
+.sonar .bathy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 0;
+}
+.sonar .bathy .sonarPoint {
+  gap: 0 100px;
+}
+.sonar .bathy > .sonarImg {
+  justify-content: center;
+  width: 100%;
+}
+.sonar .bathy > .sonarImg > img {
+  height: 80%;
+}
+.sonar .naval {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 0;
+}
+.sonar .naval .sonarPoint {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px 0;
+  width: 60%;
+}
+.sonar .naval .sonarPoint > .sonarImg > img {
+  width: 80%;
+}
+.sonar .naval > .sonarImg {
+  justify-content: space-evenly;
+  width: 40%;
+}
+.sonar .naval > .sonarImg > img {
+  height: 80%;
+}
+.sonar .urn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 0;
+}
+.sonar .urn .sonarPoint {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px 0;
+  width: 65%;
+}
+.sonar .urn .sonarImg {
+  justify-content: space-evenly;
+  width: 35%;
+}
+.sonar .urn .sonarImg > img {
+  width: 70%;
+}
+.sonar .s_test {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 0;
+}
+.sonar .s_test .sonarPoint {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px 0;
+  width: 50%;
+}
+.sonar .s_test .sonarImg {
+  justify-content: space-evenly;
+  width: 50%;
+}
+.sonar .s_test .sonarImg > img {
+  height: 60%;
 }
 
 /*# sourceMappingURL=sonar.css.map */

@@ -106,14 +106,14 @@ footer {
 footer .footerInfo {
   display: flex;
   width: 550px;
-  height: 30px;
+  height: 20px;
   justify-content: space-evenly;
   text-align: center;
   font-size: 0.8rem;
   color: #666;
 }
 footer .footerInfo > h2, footer .footerInfo > p {
-  line-height: 30px;
+  line-height: 20px;
 }
 
 .lnb {
@@ -278,7 +278,7 @@ footer .footerInfo > h2, footer .footerInfo > p {
   margin-bottom: 60px;
 }
 .tectical .gnss > div > figure > img {
-  height: 100%;
+  width: 95%;
   object-fit: contain;
 }
 .tectical .gnss > div > figure > figcaption {
@@ -396,12 +396,11 @@ footer .footerInfo > h2, footer .footerInfo > p {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 10px 0;
+  gap: 20px 0;
   margin-bottom: 0;
 }
 .rcied > .tecticalPoint > .tecticalApp > ul {
   padding: 10px 30px;
-  margin-bottom: 30px;
 }
 .rcied > .tecticalPoint > .tecticalApp > img {
   width: 100%;
@@ -417,11 +416,6 @@ footer .footerInfo > h2, footer .footerInfo > p {
 .sonar .sonarPoint {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 50px;
-}
-.sonar .sonarPoint .sonarApp,
-.sonar .sonarPoint .sonarKey {
-  flex: 0.4;
 }
 .sonar .sonarPoint h3 {
   margin-bottom: 10px;
@@ -456,15 +450,245 @@ footer .footerInfo > h2, footer .footerInfo > p {
 }
 .sonar .sonarImg {
   display: flex;
-  justify-content: space-evenly;
 }
 .sonar .sonarImg > img {
+  object-fit: contain;
+  height: 100%;
+}
+.sonar .mb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 0;
+}
+.sonar .mb .sonarPoint {
+  gap: 0 100px;
+}
+.sonar .mb .sonarImg {
+  justify-content: space-evenly;
+  width: 100%;
+}
+.sonar .mb .sonarImg > img {
+  height: 100%;
+}
+.sonar .sb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 0;
+}
+.sonar .sb .sonarPoint {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px 0;
+  width: 40%;
+}
+.sonar .sb .sonarImg {
+  justify-content: space-evenly;
+  width: 60%;
+}
+.sonar .sb .sonarImg > img {
+  height: 80%;
+}
+.sonar .bathy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 0;
+}
+.sonar .bathy .sonarPoint {
+  gap: 0 100px;
+}
+.sonar .bathy > .sonarImg {
+  justify-content: center;
+  width: 100%;
+}
+.sonar .bathy > .sonarImg > img {
+  height: 80%;
+}
+.sonar .naval {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 0;
+}
+.sonar .naval .sonarPoint {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px 0;
+  width: 60%;
+}
+.sonar .naval .sonarPoint > .sonarImg > img {
   width: 80%;
-  height: 300px;
+}
+.sonar .naval > .sonarImg {
+  justify-content: space-evenly;
+  width: 40%;
+}
+.sonar .naval > .sonarImg > img {
+  height: 80%;
+}
+.sonar .urn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 0;
+}
+.sonar .urn .sonarPoint {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px 0;
+  width: 65%;
+}
+.sonar .urn .sonarImg {
+  justify-content: space-evenly;
+  width: 35%;
+}
+.sonar .urn .sonarImg > img {
+  width: 70%;
+}
+.sonar .s_test {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 0;
+}
+.sonar .s_test .sonarPoint {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px 0;
+  width: 50%;
+}
+.sonar .s_test .sonarImg {
+  justify-content: space-evenly;
+  width: 50%;
+}
+.sonar .s_test .sonarImg > img {
+  height: 60%;
+}
+
+.unmanned ul {
+  padding-left: 20px;
+}
+.unmanned ul li {
+  list-style-type: disc;
+}
+.unmanned ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.unmanned .unmannedPoint,
+.unmanned .unmannedPoint2 {
+  display: flex;
+}
+.unmanned .unmannedPoint h3,
+.unmanned .unmannedPoint2 h3 {
+  margin-bottom: 10px;
+}
+.unmanned .unmannedPoint ul,
+.unmanned .unmannedPoint2 ul {
+  padding-left: 20px;
+}
+.unmanned .unmannedPoint ul li,
+.unmanned .unmannedPoint2 ul li {
+  list-style-type: disc;
+}
+.unmanned .unmannedPoint ul li:not(:last-child),
+.unmanned .unmannedPoint2 ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.unmanned .unmannedImg {
+  display: flex;
+}
+.unmanned .unmannedImg > img {
   object-fit: contain;
 }
-.sonar .sonarImg.imgSmaller > img {
-  height: 220px;
+.unmanned .multi > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 0;
+}
+.unmanned .multi > ul > li {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0 30px;
+  width: 100%;
+  background-color: #eee;
+}
+.unmanned .multi > ul > li > p {
+  margin: auto 0;
+}
+.unmanned .multi > ul > li > img {
+  object-fit: contain;
+  width: 250px;
+}
+.unmanned .auv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+.unmanned .auv .unmannedPoint {
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.unmanned .auv .unmannedPoint > .unmannedImg {
+  width: 45%;
+}
+.unmanned .auv .unmannedPoint > .unmannedImg > img {
+  width: 100%;
+}
+.unmanned .auv .unmannedPoint > .unmannedKey {
+  width: 50%;
+}
+.unmanned .auv .unmannedPoint2 {
+  flex-wrap: nowrap;
+  gap: 0 100px;
+  margin-top: 20px;
+}
+.unmanned .auv .unmannedPoint2 > .unmannedImg {
+  justify-content: space-evenly;
+  width: 40%;
+}
+.unmanned .auv .unmannedPoint2 > .unmannedImg > img {
+  height: 80%;
+}
+.unmanned .auv .unmannedPoint2 > .unmannedKey {
+  width: 60%;
+}
+.unmanned .rov {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+.unmanned .rov .unmannedPoint {
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.unmanned .rov .unmannedPoint > .unmannedImg {
+  justify-content: space-evenly;
+  width: 30%;
+}
+.unmanned .rov .unmannedPoint > .unmannedImg > img {
+  width: 80%;
+}
+.unmanned .rov .unmannedPoint > .unmannedKey {
+  width: 70%;
+}
+.unmanned .rov .unmannedPoint2 {
+  flex-wrap: nowrap;
+  gap: 10px 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.unmanned .rov .unmannedPoint2 > .unmannedImg {
+  justify-content: space-evenly;
+  width: 30%;
+}
+.unmanned .rov .unmannedPoint2 > .unmannedImg > img {
+  width: 80%;
+}
+.unmanned .rov .unmannedPoint2 > .unmannedKey {
+  width: 70%;
 }
 
 .contact {
@@ -474,27 +698,28 @@ footer .footerInfo > h2, footer .footerInfo > p {
 .contact h1 {
   margin-bottom: 10px;
 }
+.contact .division {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
 .contact .googleMap {
   width: 100%;
   height: 500px;
-  margin-bottom: 10px;
 }
 .contact .aboutUs {
-  width: 100%;
-  border-collapse: collapse;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
 }
-.contact .aboutUs tr {
-  height: 50px;
+.contact .aboutUs p {
+  line-height: 1.5rem;
 }
-.contact .aboutUs tr:first-child {
-  border-bottom: 1px solid #ccc;
+.contact .aboutUs .address {
+  width: 45%;
 }
-.contact .aboutUs td:nth-child(1) {
-  width: 200px;
-}
-.contact .aboutUs td span {
-  font-weight: 700;
-  margin-right: 10px;
+.contact .aboutUs .sales {
+  width: 45%;
 }
 
 .wrap {

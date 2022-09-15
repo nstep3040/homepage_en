@@ -12,7 +12,7 @@ footer {
   .footerInfo {
     display: flex;
     width: 550px;
-    height: 30px;
+    height: 20px;
     justify-content: space-evenly;
     text-align: center;
     font-size: 0.8rem;
@@ -20,7 +20,7 @@ footer {
 
     & > h2,
     & > p {
-      line-height: 30px;
+      line-height: 20px;
     }
   }
 }
