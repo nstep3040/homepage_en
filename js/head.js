@@ -20,7 +20,7 @@ document.write(`
                 <li><a href="./html/sub_tectical_01.html">Tectical/Security</a></li>
                 <li><a href="./html/sub_sonar_01.html">Sonar System</a></li>
                 <li><a href="./html/sub_unmanned_01.html">Unmanned System</a></li>
-                <li><a href="">Notice</a></li>
+                <li><a href="./html/sub_notice_list.html">Notice</a></li>
                 <li><a href="./html/sub_contact.html">Contact</a></li>
             </ul>
         </header>
