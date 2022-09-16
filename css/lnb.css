@@ -5,22 +5,26 @@
 .lnb > h2 {
   margin-bottom: 20px;
 }
+.lnb > ul {
+  display: flex;
+  flex-direction: column;
+}
 .lnb > ul > li {
   display: block;
-  width: 220px;
+  width: 200px;
   height: 50px;
   text-align: center;
-  border: 2px solid #3d6aff;
-}
-.lnb > ul > li:not(:last-child) {
-  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
 }
 .lnb > ul > li > input {
   display: none;
 }
 .lnb > ul > li > input:checked + label {
   font-weight: 700;
-  background-color: rgba(47, 130, 255, 0.3);
+  background-color: rgba(6, 72, 114, 0.7);
+}
+.lnb > ul > li > input:checked + label > a {
+  color: #fff;
 }
 .lnb > ul > li > label {
   display: block;
@@ -30,9 +34,8 @@
 }
 .lnb > ul > li > label > a {
   display: block;
-}
-.lnb > ul > li > label > a:active {
-  color: #00f;
+  font-weight: 700;
+  color: #333;
 }
 
 /*# sourceMappingURL=lnb.css.map */

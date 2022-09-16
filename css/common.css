@@ -48,12 +48,63 @@ body {
 .noticePreview .noticePost {
   width: 65%;
   height: 100%;
-  border: 1px solid #000;
+}
+.noticePreview .noticePost > h3 {
+  display: flex;
+  justify-content: space-between;
+}
+.noticePreview .noticePost > h3 > a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+}
+.noticePreview .noticePost > table {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 90%;
+  padding-top: 10px;
+}
+.noticePreview .noticePost > table > tbody {
+  height: 53px;
+  line-height: 53px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+.noticePreview .noticePost > table > tbody tr {
+  display: flex;
+  color: #333;
+}
+.noticePreview .noticePost > table > tbody tr td {
+  display: inline-block;
+}
+.noticePreview .noticePost > table > tbody tr td:nth-child(1) {
+  width: 10%;
+}
+.noticePreview .noticePost > table > tbody tr td:nth-child(2) {
+  width: 60%;
+  text-align: start;
+  padding-left: 10px;
+}
+.noticePreview .noticePost > table > tbody tr td:nth-child(3) {
+  width: 20%;
+}
+.noticePreview .noticePost > table > tbody tr td:nth-child(4) {
+  width: 10%;
+}
+.noticePreview .noticePost > table > tbody tr td a {
+  display: block;
+  color: #333;
+}
+.noticePreview .noticePost > table > tbody tr td a span {
+  margin-left: 10px;
 }
 .noticePreview .noticeImg {
   width: 30%;
   height: 100%;
-  border: 1px solid #000;
+  background-color: #eee;
+  text-align: center;
+  line-height: 300px;
 }
 
 header {
@@ -63,13 +114,14 @@ header {
   width: 100%;
   height: 60px;
   margin-bottom: 50px;
+  background-color: #064872;
 }
 header .logo a {
   display: inline-block;
   width: 250px;
   height: 60px;
   margin-right: 200px;
-  background: url("../img/logo_01.svg") no-repeat;
+  background: url("../img/logo_01_white.svg") no-repeat;
   background-position: center;
   background-size: 80%;
 }
@@ -90,7 +142,7 @@ header .topMenu > li > a {
   display: block;
   height: 100%;
   line-height: 60px;
-  color: #000;
+  color: #fff;
 }
 header .topMenu > li > a:hover {
   color: #f00;
@@ -125,22 +177,26 @@ footer .footerInfo > h2, footer .footerInfo > p {
 .lnb > h2 {
   margin-bottom: 20px;
 }
+.lnb > ul {
+  display: flex;
+  flex-direction: column;
+}
 .lnb > ul > li {
   display: block;
-  width: 220px;
+  width: 200px;
   height: 50px;
   text-align: center;
-  border: 2px solid #3d6aff;
-}
-.lnb > ul > li:not(:last-child) {
-  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
 }
 .lnb > ul > li > input {
   display: none;
 }
 .lnb > ul > li > input:checked + label {
   font-weight: 700;
-  background-color: rgba(47, 130, 255, 0.3);
+  background-color: rgba(6, 72, 114, 0.7);
+}
+.lnb > ul > li > input:checked + label > a {
+  color: #fff;
 }
 .lnb > ul > li > label {
   display: block;
@@ -150,9 +206,8 @@ footer .footerInfo > h2, footer .footerInfo > p {
 }
 .lnb > ul > li > label > a {
   display: block;
-}
-.lnb > ul > li > label > a:active {
-  color: #00f;
+  font-weight: 700;
+  color: #333;
 }
 
 .tectical ul {
@@ -171,10 +226,6 @@ footer .footerInfo > h2, footer .footerInfo > p {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 50px;
-}
-.tectical .tecticalPoint .tecticalApp,
-.tectical .tecticalPoint .tecticalKey {
-  flex: 0.4;
 }
 .tectical .tecticalPoint h3 {
   margin-bottom: 10px;
@@ -210,22 +261,23 @@ footer .footerInfo > h2, footer .footerInfo > p {
 .tectical .tecticalImg.imgSmaller > img {
   height: 220px;
 }
-.tectical .mcm > ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px 0;
-}
-.tectical .mcm > ul > li {
-  width: 45%;
-}
-.tectical .mcm > ul > li > p {
-  font-weight: 700;
+.tectical .mcm > h3 {
   margin-bottom: 10px;
 }
-.tectical .mcm > ul > li > img {
+.tectical .mcm > p {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.tectical .mcm .tecticalPoint .tecticalKey {
+  width: 30%;
+  margin-left: 10px;
+}
+.tectical .mcm .tecticalPoint .tecticalImg {
+  width: 70%;
+}
+.tectical .mcm .tecticalPoint .tecticalImg > img {
   object-fit: contain;
-  height: 200px;
+  height: 100%;
 }
 .tectical .digital {
   display: flex;
@@ -693,16 +745,55 @@ footer .footerInfo > h2, footer .footerInfo > p {
   width: 70%;
 }
 
+.notice > h1 {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.notice .post > table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+}
+.notice .post > table tr {
+  height: 65px;
+}
+.notice .post > table tr:first-child {
+  border-top: 2px solid #000;
+}
+.notice .post > table tr td {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+.notice .post > table tr .postIdx {
+  width: 5%;
+}
+.notice .post > table tr .postTitle {
+  text-align: start;
+  padding-left: 20px;
+}
+.notice .post > table tr .postTitle > a {
+  display: block;
+}
+.notice .post > table tr .postWriter {
+  width: 10%;
+}
+.notice .post > table tr .postDate {
+  width: 10%;
+}
+.notice .post > table tr .postHit {
+  width: 5%;
+}
+
 .contact {
   width: 80%;
   margin: 0 auto;
 }
 .contact h1 {
   margin-bottom: 10px;
-}
-.contact .division {
-  border: 1px solid #ddd;
-  margin: 20px 0;
 }
 .contact .googleMap {
   width: 100%;
@@ -740,6 +831,10 @@ footer .footerInfo > h2, footer .footerInfo > p {
 }
 .wrap .sub {
   padding-left: 260px;
+}
+.wrap .division {
+  border: 1px solid #ddd;
+  margin: 20px 0;
 }
 
 /*# sourceMappingURL=common.css.map */

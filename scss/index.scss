@@ -31,12 +31,72 @@
   .noticePost {
     width: 65%;
     height: 100%;
-    border: 1px solid #000;
+
+    & > h3 {
+      display: flex;
+      justify-content: space-between;
+
+      & > a {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #555;
+      }
+    }
+
+    & > table {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 90%;
+      padding-top: 10px;
+
+      & > tbody {
+        height: 53px;
+        line-height: 53px;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+
+        tr {
+          display: flex;
+          color: #333;
+
+          td {
+            display: inline-block;
+
+            &:nth-child(1) {
+              width: 10%;
+            }
+            &:nth-child(2) {
+              width: 60%;
+              text-align: start;
+              padding-left: 10px;
+            }
+            &:nth-child(3) {
+              width: 20%;
+            }
+            &:nth-child(4) {
+              width: 10%;
+            }
+
+            a {
+              display: block;
+              color: #333;
+
+              span {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   .noticeImg {
     width: 30%;
     height: 100%;
-    border: 1px solid #000;
+    background-color: #eee;
+    text-align: center;
+    line-height: 300px;
   }
 }

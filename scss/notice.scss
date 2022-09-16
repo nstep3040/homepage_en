@@ -1,0 +1,55 @@
+.notice {
+  & > h1 {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .post {
+    & > table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #333;
+
+      tr {
+        height: 65px;
+
+        &:first-child {
+          border-top: 2px solid #000;
+        }
+
+        td {
+          border-top: 1px solid #aaa;
+          border-bottom: 1px solid #aaa;
+        }
+
+        .postIdx {
+          width: 5%;
+        }
+
+        .postTitle {
+          text-align: start;
+          padding-left: 20px;
+
+          & > a {
+            display: block;
+          }
+        }
+
+        .postWriter {
+          width: 10%;
+        }
+
+        .postDate {
+          width: 10%;
+        }
+
+        .postHit {
+          width: 5%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.notice > h1 {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.notice .post > table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+}
+.notice .post > table tr {
+  height: 65px;
+}
+.notice .post > table tr:first-child {
+  border-top: 2px solid #000;
+}
+.notice .post > table tr td {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+.notice .post > table tr .postIdx {
+  width: 5%;
+}
+.notice .post > table tr .postTitle {
+  text-align: start;
+  padding-left: 20px;
+}
+.notice .post > table tr .postTitle > a {
+  display: block;
+}
+.notice .post > table tr .postWriter {
+  width: 10%;
+}
+.notice .post > table tr .postDate {
+  width: 10%;
+}
+.notice .post > table tr .postHit {
+  width: 5%;
+}
+
+/*# sourceMappingURL=notice.css.map */

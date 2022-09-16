@@ -6,6 +6,7 @@
 @import "./tectical.scss";
 @import "./sonar.scss";
 @import "./unmanned.scss";
+@import "./notice.scss";
 @import "./contact.scss";
 
 .wrap {
@@ -25,5 +26,10 @@
 
   .sub {
     padding-left: 260px;
+  }
+
+  .division {
+    border: 1px solid #ddd;
+    margin: 20px 0;
   }
 }

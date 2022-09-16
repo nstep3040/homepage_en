@@ -7,6 +7,7 @@ header {
   width: 100%;
   height: $headerHeight + px;
   margin-bottom: 50px;
+  background-color: #064872;
 
   .logo {
     a {
@@ -14,7 +15,8 @@ header {
       width: 250px;
       height: $headerHeight + px;
       margin-right: 200px;
-      background: url("../img/logo_01.svg") no-repeat;
+      // background: url("../img/logo_01.svg") no-repeat;
+      background: url("../img/logo_01_white.svg") no-repeat;
       background-position: center;
       background-size: 80%;
     }
@@ -37,7 +39,7 @@ header {
         display: block;
         height: 100%;
         line-height: 60px;
-        color: #000;
+        color: #fff;
 
         &:hover {
           color: #f00;
