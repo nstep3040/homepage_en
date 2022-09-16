@@ -1,6 +1,6 @@
 document.write(`
 <div id="unmannedLnb" class="lnb">
-    <h2>Sonar System</h2>
+    <h2>Unmanned System</h2>
     <ul>
         <li>
             <input type="radio" id="unmannedSub01" name="unmannedSub" />

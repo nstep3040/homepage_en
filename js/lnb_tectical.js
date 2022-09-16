@@ -1,6 +1,6 @@
 document.write(`
 <div id="tecticalLnb" class="lnb">
-    <h2>Sonar System</h2>
+    <h2>Tectical/Security</h2>
     <ul>
         <li>
             <input type="radio" id="tecticalSub01" name="tecticalSub" />
